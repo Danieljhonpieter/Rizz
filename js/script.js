@@ -10,12 +10,12 @@ const nama1 = document.querySelectorAll('.nama h2')[1]
 const waktu = document.getElementById('waktu')
 const jam = waktu.querySelector('h1')
 const hari = waktu.querySelector('p')
-const bg1 = document.querySelector('.bg1')
-const bg2 = document.querySelector('.bg2')
+const bg1 = document.querySelector('.background1')
+const bg2 = document.querySelector('.background2')
 const body = document.querySelector('.body')
 const audio = document.querySelector('.audio')
 
-body.classList.add('bg1')
+body.classList.add('background1')
 
 const date = new Date()
 const hour = String(date.getHours()).padStart(2, '0')
@@ -84,7 +84,7 @@ hilang1.addEventListener('click', () => {
         setTimeout(typeWriter, speed)
       } else {
         messege2.classList.add('kelip')
-        body.classList.replace('bg1', 'bg2')
+        body.classList.replace('background1', 'background2')
         body.classList.add('muncul')
         hilang2.style.display = "block"
       }
