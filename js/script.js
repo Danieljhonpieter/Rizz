@@ -25,7 +25,7 @@ const tgl = date.getDate()
 const month = date.getMonth()
 const year = date.getFullYear()
 
-hari.innerHTML = `${dayID()}, ${tgl} ${monthID()} ${year}`
+hari.innerHTML = `${day()}, ${tgl} ${month()} ${year}`
 jam.innerHTML = `${hour}:${minutes}`
 
 // Dirubah 
